@@ -1,3 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon July 24 10:09:46 2017
+
+@author: Zoltan Cseresnyes
+@affiliation: Research Group Applied Systems Biology, Leibniz Institute for 
+Natural Product Research and Infection Biology – Hans Knöll Institute (HKI),
+Beutenbergstrasse 11a, 07745 Jena, Germany.
+@email: zoltan.cseresnyes@leibniz-hki.de or zcseresn@gmail.com
+
+This is a Python script for performing automated rotations and consecutive rendering of VRML surfaces. 
+Full details can be found in our paper Kriegel et al., Cytometry A 2017-2018. If any part 
+of the code is used for academic purposes or publications, please cite the 
+above mentioned paper.
+
+Copyright (c) 2016-2017, 
+Leibniz Institute for Natural Product Research and Infection Biology – 
+Hans Knöll Institute (HKI)
+
+Licence: BSD-3-Clause, see ./LICENSE or 
+https://opensource.org/licenses/BSD-3-Clause for full details
+
+"""
+
 import bpy
 from bpy import context
 import bmesh
@@ -41,10 +65,6 @@ print(time.strftime("%d/%m/%Y"))
 print("Current time " , time.strftime("%X"))
  
 """Put the full path to the data folder here:"""
-#path = "/media/zoltan/Zoltan_Win_Linux/Sandra/BoneMarrow/SentOn__02_02_2017/170201_Surf_Zoltan/150701_16-17-46_analysed_newAlgo"
-#path = "/data/DATA/DRFZ_BoneMarrow/testDataset"
-#path = "/media/zoltan/Elements/DATA_Desktop/DRFZ_BoneMarrow/testDataset"
-#path = "/data/DATA/DRFZ_BoneMarrow/3D_simulations/wrl_files/a__150305_d30_Exp2M1_kappa_16-23-51_deconv_flip_rot_crop_unchecked_checked_fewerPCs"
 path = "/home/zoltan/Schreibtisch/Daten_sync/Software_Projects/Blender_projects/TestData/a__15-30-14_150311_Exp2_M1_IgM_deconv_flipped_cropped_unchecked_checked"
 
 #Add a new lamp:
@@ -58,8 +78,6 @@ if turnOffLamps == True:
     bpy.data.objects["Lamp"].data.energy = 0
     if addSecondLamp == True:
         bpy.data.objects["Sun"].data.energy = 0
-
-
 
 print()
 print("***************************")
