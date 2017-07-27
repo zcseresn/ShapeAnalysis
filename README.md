@@ -8,7 +8,7 @@ This work is available as a paper in Cytometry A 2017, by Kriegel et al.
 
 The files named SHADExxx are part of the Fiji plugin that calculates the DFTs. For unaltered use, simply copy the jar file
 into the "plugins" folder of your local Fiji installation. The .java file contains the source code, the .class file is its 
-binary complied version.
+binary compiled version.
 
 The trainSOM.m file can be run in Matlab to produce the trained SOM. It requires a simple .csv file, with the feature vector as
 rows and the individual inputs (e.g., cells or cell tracks) as columns. E.g., with 8 track parameters and 1100 tracks (cells),
