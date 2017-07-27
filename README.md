@@ -9,5 +9,9 @@ The files named SHADExxx are part of the Fiji plugin that calculates the DFTs. F
 into the "plugins" folder of your local Fiji installation. The .java file contains the source code, the .class file is its 
 binary complied version.
 
+The trainSOM.m file can be run in Matlab to produce the trained SOM. It requires a simple .csv file, with the feature vector as
+rows and the individual inputs (e.g., cells or cell tracks) as columns. E.g., with 8 track parameters and 1100 tracks (cells),
+the input .csv file has to have 8 rows and 1100 columns.
+
 Both for unaltered and altered use, please quote our work. Details are to be found in the header of each source code file.
 
