@@ -24,7 +24,7 @@
 %Trains_SOM_v01.m: the first version
 
 % User data
-trainingIterations = 10;
+trainingIterations = 1000;
 originalNeighborhood = 6; 
 networkSize = 12;
 columnsToUse = [1 2 3 4 5 6 7 8];
