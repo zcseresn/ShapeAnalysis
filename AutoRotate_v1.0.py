@@ -68,8 +68,7 @@ print(time.strftime("%d/%m/%Y"))
 print("Current time " , time.strftime("%X"))
  
 """Put the full path to the data folder here:"""
-path = "/home/zoltan/Schreibtisch/Daten_sync/Collaborations/ShapeAnalysis_Fabi_Ralf/Simons_data/newAnalysisForPaper_2017/Surfaces/RestingCells"
-
+path = "/home/zoltan/Documents/Daten_sync/Articles/MyPapers/Papers_under_preparation/JoVE_2018/Submitted/Data/RestingCells_smallSubset"
 #Add a new lamp:
 if addSecondLamp == True:
     bpy.ops.object.lamp_add(type='SUN', radius=1, view_align=False, location=camera_location, 
